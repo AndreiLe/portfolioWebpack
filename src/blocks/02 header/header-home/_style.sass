@@ -1,0 +1,138 @@
+.header-home
+  background-image: url('img/bg-header-home.jpg');
+  background-color: #001668
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  font-size: 16px;
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 600px;
+  min-height: 100vh;
+  &-wrap
+    margin-top: 50vh;
+    transform: translate(0,-65%);
+  &:before 
+    content: ''
+    display: block
+    height: 1000%
+    width: 15%
+    left: 0
+    position: absolute
+    bottom: 0
+    transform: rotate(-278deg)
+    transform-origin: left bottom
+    -webkit-backface-visibility: hidden
+    background-color: #fff
+  &__menu
+    position: fixed
+    height: 100vh
+    align-items: left;
+    z-index: 1000
+    padding: 5px 5px 50px
+  &__menu-wrap
+    position: absolute
+    bottom: 0
+  &__menu-item
+    margin-top: 58px;
+    text-align: left;
+    bottom: 0;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    line-height: 15px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: block
+    color: red
+    outline: none;
+    &:before
+      content: "";
+      display: block;
+      position: absolute;
+      top: -10px;
+      width: 100%;
+      height: 2px;
+      background-color: red;
+    &:hover, &:focus, &:active
+      color: red
+      text-transform: uppercase;
+      &:before
+        content: ""
+    &--hide
+      margin-top: 58px;
+      text-align: left;
+      bottom: 0;
+      vertical-align: bottom;
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      line-height: 15px;
+      margin-bottom: 5px;
+      margin-left: 5px;
+      display: block
+      color: #bbb
+      &:before
+        content: none
+
+  &__logo 
+    position: relative;
+    z-index: 1
+    &-img
+      filter: drop-shadow(1px 1px 1px black)
+      width: 50px
+      &:hover
+        opacity: 1
+        filter: none !important;
+    &-img--hide
+      opacity: .3;
+      filter: grayscale(100%) !important;
+
+  &__github 
+    padding: 10px;
+    color: #fff;
+    white-space: nowrap;
+    display: block;
+    position: absolute;
+    right: 0;
+    filter: drop-shadow(1px 1px 1px black) drop-shadow(5px 3px 5px #042e8f);
+    z-index: 1000;
+    svg
+      color: #fff;
+      fill: currentColor;
+
+
+  &__h1
+    font-family: 'Permanent Marker',cursive;
+    text-align: center;
+    color: #d90e26;
+    font-size: 100px;
+    line-height: 110px;
+    transform: rotate(-8deg);
+    text-shadow: 5px 5px 2px #000;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    overflow: visible;
+    &.header-neon
+      color: #fff6f6;
+      animation: header-h1-neon-animation 1.5s ease-in-out infinite alternate
+      animation-delay: 0s !important;
+    &--sub
+      font-family: 'Open Sans',sans-serif;
+      text-align: center;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px #000, 5px 3px 5px #042e8f;
+      letter-spacing: 2px;
+      margin-top: 75px
+      
+
+
+//all media
+@import "_media.sass"

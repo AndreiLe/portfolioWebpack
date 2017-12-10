@@ -1,0 +1,39 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+    "start:prod": "webpack-dev-server --hot --inline --config=webpack.config.prod.js",
+    "build": "webpack -p --config=webpack.config.prod.js",
+    "build:dev": "webpack --progress --colors"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expose-loader": "^0.7.4",
+    "resolve-url-loader": "^2.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.2.3",
+    "css-hot-loader": "^1.3.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-critical-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.5.0",
+    "html-webpack-plugin": "^2.30.1",
+    "node-loader": "^0.6.0",
+    "postcss-loader": "^2.0.6",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  }
+}

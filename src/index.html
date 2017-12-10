@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" >
+<%= require('html-loader?interpolate!./blocks/01 head/_index.html') %>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TST6ZXL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+  <%= require('html-loader?interpolate!./blocks/02 header/header-home/_index.html') %>
+
+  <main>
+    <%= require('html-loader?interpolate!./blocks/04 home/_index.html') %>
+  </main>
+
+  <%= require('html-loader?interpolate!./blocks/03 footer/footer-home/_index.html') %>
+
+	<% for (var css in htmlWebpackPlugin.files.css) { %>
+	<link rel="stylesheet" property="stylesheet" href="<%= htmlWebpackPlugin.files.css[css] %>">
+	<% } %>
+
+  <% for (let js in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[js] %>"></script>
+  <% } %>
+
+</body>
+</html>

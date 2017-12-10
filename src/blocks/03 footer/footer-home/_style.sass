@@ -1,0 +1,72 @@
+.footer-home
+  padding: 80px 10px 0
+  &__more
+    text-align: center
+  &__more-btn
+    display: block;
+    background: #007cc3;
+    padding: 60px 20px;
+    margin: 0 25px;
+    background: linear-gradient(308deg, #1cb5e0, #000046);
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+    transition: background-position 0.5s;
+    &:hover, &:focus
+      //background: #06c;
+      background-position: 0 0;
+    span
+      display: inline-block
+      position: relative
+      border: none
+      padding-bottom: 4px
+      text-transform: uppercase
+      color: #fff
+      font-weight: 700
+      &:active, &:focus, &:hover
+        outline: 0
+        color: #fff
+      &:after
+        content: ''
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ1IDM0IiBoZWlnaHQ9IjM0cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0NSAzNCIgd2lkdGg9IjQ1cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwb2x5Z29uIGZpbGw9IiNmZmZmZmYiIHBvaW50cz0iMjQuOTk0LDMxLjcwNSAzNi45MDgsMjAgMCwyMCAwLDE1IDM2LjkwOCwxNSAyNC45OTQsMy4wMDYgMjcuODIyLDAuMjczIDQ1LDE3LjQ5OSAyNy44MjIsMzQuNjA1ICAgIi8+PC9zdmc+')
+        background-position: 0 0
+        background-repeat: no-repeat
+        background-size: 100% 100%
+        width: 16px
+        height: 12px
+        position: absolute
+        top: 5px
+        right: -28px
+        transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1)
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        background: #fff
+        width: 0
+        height: 2px
+        transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1)
+    &:hover span
+      &:after
+        right: -35px
+      &:before
+        width: 100%
+  &-copyright
+    text-align: center;
+    height: 150px;
+    &__span
+      line-height: 150px;
+      display: inline-block;
+      color: #8f8f8f;
+      text-transform: uppercase;
+      letter-spacing: 3px
+      padding: 0 5px
+    &__img
+      filter: grayscale(100%);
+      opacity: 0.3;
+      line-height: 150px;
+      vertical-align: middle;
+
+//all media
+@import "_media.sass"
+
